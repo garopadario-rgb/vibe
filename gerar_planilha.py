@@ -197,10 +197,10 @@ for i, row in enumerate(data):
             cell.font = Font(name="Calibri", size=9, bold=True, color="1A1A2E")
         # Link — azul clicável
         elif col == 3:
-            cell.font = Font(name="Calibri", size=9, color="1155CC", underline="single")
+            cell.font = Font(name="Calibri", size=8, color="1155CC", underline="single")
             cell.hyperlink = val
-            cell.value = "▶ Abrir Vídeo"
-            cell.alignment = Alignment(horizontal="center", vertical="center")
+            cell.value = val
+            cell.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
         # Categoria — cor por tipo
         elif col == 4:
             cell.font = Font(name="Calibri", size=9, bold=True, color=cat_color)
